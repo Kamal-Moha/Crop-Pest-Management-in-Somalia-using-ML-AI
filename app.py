@@ -5,22 +5,22 @@ from fastai.vision.all import *
 from fastai.text.all import *
 from fastai.collab import *
 from fastai.tabular.all import *
-from pathlib import Path
+#from pathlib import Path
 import joblib
 from time import sleep
 import warnings
 warnings.filterwarnings('ignore')
 
-import pathlib
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
+# import pathlib
+# temp = pathlib.PosixPath
+# pathlib.PosixPath = pathlib.WindowsPath
 
 st.header('Detect The Disease Affecting your Crop', divider='rainbow')
 st.markdown('Simply upload a picture of your affected crop and our system will tell what is affecting it')
 
-maize = 'E:\\Omdena Projects\\Crop Pest Management in Somalia using AI\\new_maize_fastai_model.pkl'
-cassava = 'E:\\Omdena Projects\\Crop Pest Management in Somalia using AI\\new_cassava_fastai_model.pkl'
-tomato_crop = 'E:\\Omdena Projects\\Crop Pest Management in Somalia using AI\\Tomato_Crop_fastai_model.pkl'
+maize = 'new_maize_fastai_model.pkl'
+cassava = 'new_cassava_fastai_model.pkl'
+tomato_crop = 'Tomato_Crop_fastai_model.pkl'
 
 # Choosing the crop
 crop_option = st.selectbox('What Crop do you want to Detect?', ('Maize', 'Cassava', 'Tomato Crop'), index=None)
