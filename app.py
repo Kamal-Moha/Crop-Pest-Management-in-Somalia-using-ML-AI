@@ -20,7 +20,7 @@ st.markdown('Simply upload a picture of your affected crop and our system will t
 
 maize = 'new_maize_fastai_model.pkl'
 cassava = 'new_cassava_fastai_model.pkl'
-# tomato_crop = 'Tomato_Crop_fastai_model.pkl'
+tomato_crop = 'Tomato_Crop_fastai_model.pkl'
 
 # Choosing the crop
 crop_option = st.selectbox('What Crop do you want to Detect?', ('Maize', 'Cassava', 'Tomato Crop'), index=None)
@@ -31,8 +31,8 @@ if crop_option == 'Maize':
   file = maize
 elif crop_option == 'Cassava':
   file = cassava
-# elif crop_option == 'Tomato Crop':
-#   file = tomato_crop
+elif crop_option == 'Tomato Crop':
+  file = tomato_crop
 
 # Upload file
 uploaded_file = st.file_uploader('Upload Image', type=['png', 'jpg'])
