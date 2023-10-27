@@ -18,7 +18,7 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
-st.header('Detect The Disease Affecting your Crop', divider='rainbow')
+st.header('Crop Pest Management Using AI in Somalia', divider='rainbow')
 st.markdown('Simply upload a picture of your affected crop and our system will tell what is affecting it')
 
 maize = 'new_maize_fastai_model.pkl'
