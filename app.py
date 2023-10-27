@@ -15,6 +15,14 @@ warnings.filterwarnings('ignore')
 # temp = pathlib.PosixPath
 # pathlib.PosixPath = pathlib.WindowsPath
 
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
 st.header('Detect The Disease Affecting your Crop', divider='rainbow')
 st.markdown('Simply upload a picture of your affected crop and our system will tell what is affecting it')
 
