@@ -5,21 +5,15 @@ from fastai.vision.all import *
 from fastai.text.all import *
 from fastai.collab import *
 from fastai.tabular.all import *
-#from pathlib import Path
 import joblib
 from time import sleep
 import warnings
 warnings.filterwarnings('ignore')
 
-# import pathlib
-# temp = pathlib.PosixPath
-# pathlib.PosixPath = pathlib.WindowsPath
-
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
-            header {visibility: hidden;}
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
