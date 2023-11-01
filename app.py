@@ -10,6 +10,8 @@ from time import sleep
 import warnings
 warnings.filterwarnings('ignore')
 
+st.set_page_config(page_title= 'Crop Pest Management Using AI in Somalia')
+
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
