@@ -18,6 +18,14 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
+# -------------
+# Start of Logo code
+lg_path = 'logo.JPG'  # Provide the path to your logo image
+logo = PILImage.create(lg_path)
+st.image(logo)
+# End of Logo code
+# ---------
+
 st.header('Crop Pest Management Using AI in Somalia', divider='rainbow')
 st.markdown('Simply upload a picture of your affected crop and our system will tell what is affecting it')
 
