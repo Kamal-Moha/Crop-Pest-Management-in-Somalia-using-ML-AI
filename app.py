@@ -18,6 +18,8 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
+st.set_page_config(page_title= 'Crop Pest Management Using AI in Somalia')
+
 # -------------
 # Start of Logo code
 lg_path = 'logo.JPG'  # Provide the path to your logo image
